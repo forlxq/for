@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<audio autoplay="autopaly"><source src="/v1/media/bgm.mp3" type="audio/mp3"></audio>
+<audio autoplay="autopaly" loop="loop"><source src="/bgm.mp3" type="audio/mp3"></audio>
         <div id="main">
 			<!--鸭子哥注：以下文字和字体颜色可自定义-->
             <div id="wrap">
@@ -190,7 +190,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2018, 08, -16); 			//时间年月日 鸭子哥提示：此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
+		    together.setFullYear(2018, 02, -16); 			//时间年月日 鸭子哥提示：此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
 		    together.setHours(0);						//小时	
 		    together.setMinutes(0);					//分钟
 		    together.setSeconds(0);					//秒前一位
@@ -221,6 +221,6 @@
 	<!-- 20170726注：添加下列HTML 5鼠标随动特效后在Mac平台浏览时会闪烁异常 -->
     
 	<!-- 如果你有强迫症的话可以直接注释掉canvas-nest.min.js就不会在Mac上闪烁了 Win和Linux没问题 -->
-<a style="text-align: center;" href="https://www.lovestory.hk">I Love You</a>
+<p style="text-align: center;"> <a  href="https://www.lovestory.hk">I Love You</a> </p>
 </body>
 </html>
