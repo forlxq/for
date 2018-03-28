@@ -52,7 +52,7 @@
     
     <script>
     </script>
-   <!-- <script>
+   <script>
     (function(){
         var canvas = $('#canvas');
 		
@@ -170,7 +170,7 @@
                 $await(Jscex.Async.sleep(25));
             }
         }));
-        var textAnimate = eval(Jscex.compile("async", function () {
+        <!--var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
 		    together.setFullYear(2018, 02, -16); 			//时间年月日 鸭子哥提示：此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
 		    together.setHours(0);						//小时	
@@ -183,7 +183,7 @@
                 timeElapse(together);
                 $await(Jscex.Async.sleep(1000));
             }
-        }));
+        }));-->
         var runAsync = eval(Jscex.compile("async", function () {
             $await(seedAnimate());
             $await(growAnimate());
@@ -194,7 +194,7 @@
         }));
         runAsync().start();
     })();
-    </script>-->
+    </script>
 	<!-- 20170726注：添加下列HTML 5鼠标随动特效后在Mac平台浏览时会闪烁异常 -->
     
 	<!-- 如果你有强迫症的话可以直接注释掉canvas-nest.min.js就不会在Mac上闪烁了 Win和Linux没问题 -->
