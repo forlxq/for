@@ -170,20 +170,20 @@
                 $await(Jscex.Async.sleep(25));
             }
         }));
-        <!--var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2018, 02, -16); 			//时间年月日 鸭子哥提示：此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
-		    together.setHours(0);						//小时	
-		    together.setMinutes(0);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(0);				//秒第二位
+        var textAnimate = eval(Jscex.compile("async", function () {
+		   // var together = new Date();
+		    //together.setFullYear(2018, 02, -16); 			//时间年月日 鸭子哥提示：此处修改的话是倒计时算，04,-23代表4月7日，如果是5月8日则05，22
+		    //together.setHours(0);						//小时	
+		    //together.setMinutes(0);					//分钟
+		   // together.setSeconds(0);					//秒前一位
+		    //together.setMilliseconds(0);				//秒第二位
 		    $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
-            while (true) {
-                timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
-            }
-        }));-->
+            //$("#clock-box").fadeIn(500);
+            //while (true) {
+            //    timeElapse(together);
+             //   $await(Jscex.Async.sleep(1000));
+            //}
+        }));
         var runAsync = eval(Jscex.compile("async", function () {
             $await(seedAnimate());
             $await(growAnimate());
